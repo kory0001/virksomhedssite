@@ -1,9 +1,8 @@
-@media (min-width: 650px) {
-  .drik_grid_1-1 {
+@media (min-width: 800px) {
+  .drik_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10%;
-    grid-auto-flow: row dense;
+    grid-template-columns: 0.1fr 3fr 3fr 0.1fr;
+    gap: 5%;
   }
 }
 
@@ -12,19 +11,22 @@
   flex-direction: column;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 5%;
 }
 
 .drik_item {
+  font-family: inter;
+  font-size: small;
   display: flex;
   justify-content: space-between;
-  padding: 3% 0;
+  padding: 2% 0;
 }
 
 .drik_item :first-child {
   max-width: 35ch;
 }
 
-.drik_navn {
+.bold_tekst {
   font-weight: bold;
 }
 
@@ -32,6 +34,31 @@
   color: #666;
 }
 
+h1 {
+  text-align: center;
+  font-size: 6rem;
+}
+
 h4 {
   text-transform: uppercase;
+  font-family: inter;
+}
+
+p {
+  color: #839f7c;
+  font-family: inter;
+  max-width: 50ch;
+  text-align: center;
+  margin: 0 auto;
+}
+
+u {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+}
+
+.drik_img {
+  scale: 0.8;
+  margin: 0;
+  margin-top: 10%;
 }

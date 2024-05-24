@@ -1,0 +1,178 @@
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/************************** MENU **********************/
+.logo {
+  font-family: league gothic;
+  font-size: 4vw;
+  color: #839f7c;
+}
+
+header {
+  top: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #eee5e2;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-family: inter;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #839f7c;
+}
+
+.logo a {
+  font-weight: 100;
+  text-decoration: none;
+  color: #839f7c;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 15px;
+  }
+}
+
+body {
+  background-color: #eee5e2;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: league gothic;
+  color: #839f7c;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.menup {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-family: league gothic;
+  font-size: 1.5rem;
+  color: #839f7c;
+}
+
+.menup a {
+  text-decoration: none;
+  color: #839f7c;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+/****************** FOOTER ******************/
+#footer p {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.pkursiv {
+  font-style: italic;
+}
+
+/************** FOOTER I DESKTOP **************/
+@media (min-width: 700px) {
+  #footer {
+    display: flex;
+    font-family: inter;
+    justify-content: space-around;
+    text-align: left;
+    font-size: 0.7rem;
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  #footer p {
+    text-align: left;
+    color: black;
+  }
+}

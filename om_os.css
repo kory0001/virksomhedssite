@@ -1,0 +1,11 @@
+p {
+  text-align: center;
+  color: #839f7c;
+  font-family: inter;
+}
+
+.footer p {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}

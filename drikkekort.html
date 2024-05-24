@@ -7,47 +7,78 @@
     <meta name="robots" content="noindex">
     <title>Drikkekort</title>
     <link rel="stylesheet" href="drikkekort.css">
-    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="generel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Drikkekort</h1>
+    <header>
+        <div class="logo">
+            <a href="index.html">Restaurant Amager</a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="menukort-brunch.html">Menu</a></li>
+                <li><a href="om_os.html">Om os</a></li>
+                <li><a href="#footer">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Drikkekort</h1>
 
-    <!-- Her indsættes flex -->
+        <ul class="menup">
+            <li><a href="menukort-brunch.html">BRUNCH</a></li>
+            <li><a href="menukort_smoerrebroed.html">SMØRREBRØD</a></li>
+            <li><a href="menukort_aften.html">AFTENMENU</a></li>
+            <li><a href="drikkekort.html"><u>DRIKKEKORT</u></a></li>
+        </ul>
+    </main>
 
-    <p>Vores drikkekort spreder sig bredt. Vi har diverse vine som alle fås på glas. Derudover har vi også sodavand,
-        lemonade
-        og øl. Her findes drikkelse til enhver smag!</p>
 
-    <div class="drik_grid_1-1">
+    <p>Hos Restaurant Amager spreder vores menukort sig bredt. Vi har et flot udvalg af vine, som alle fås på glas eller
+        som flaske. Derudover serverer vi
+        også sodavand, lemonade og øl.</p>
+    <div class="drik_grid">
+        <div></div>
         <div class="drikkekort">
             <h4>Kaffe og te</h4>
             <div class="drik_item">
-                <span class="drik_navn">Americano</span>
+                <span class="bold_tekst">Americano</span>
                 <span class="drik_pris">35,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Espresso</span>
+                <span class="bold_tekst">Espresso</span>
                 <span class="drik_pris">25/35,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Cappuccino</span>
+                <span class="bold_tekst">Cappuccino</span>
                 <span class="drik_pris">39,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Caffe latte</span>
+                <span class="bold_tekst">Kaffe latte</span>
                 <span class="drik_pris">39,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">A.C. Perchs te</span>
+                <span class="bold_tekst">A. C. Perch's te</span>
                 <span class="drik_pris">39,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Chai latte</span>
+                <span class="bold_tekst">Chai latte</span>
                 <span class="drik_pris">39,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Iskaffe</span>
+                <span class="bold_tekst">Iskaffe</span>
                 <span class="drik_pris">39,-</span>
             </div>
 
@@ -55,109 +86,164 @@
 
         <div class="drikkekort">
             <h4>Læskedrikke</h4>
+
             <div class="drik_item">
-                <span class="drik_navn">Pepsi</span>
+                <span class="bold_tekst">Pepsi</span>
                 <span class="drik_pris">29,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Pepsi Max</span>
+                <span class="bold_tekst">Pepsi Max</span>
                 <span class="drik_pris">29,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Faxe Kondi</span>
+                <span class="bold_tekst">Faxe Kondi</span>
                 <span class="drik_pris">29,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Rebæl økologisk lemonade <br>hyldeblomst, rabarber eller fersken</span>
+                <span class="drik_navn">
+                    <span class="bold_tekst">Rebæl økologisk lemonade</span><br> - hyldeblomst, rabarber eller
+                    fersken</span>
                 <span class="drik_pris">49,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Friskpresset appelsinjuice</span>
+                <span class="bold_tekst">Friskpresset appelsinjuice</span>
                 <span class="drik_pris">49,-</span>
             </div>
-
-
         </div>
+        <div></div>
+        <div></div>
+
         <div class="drikkekort">
+
             <h4>Øl</h4>
             <div class="drik_item">
-                <span class="drik_navn">Amager Bryghus - Christianshavn</span>
+                <span class="drik_navn"><span class="bold_tekst">Amager Bryghus</span> - Christianshavn</span>
                 <span class="drik_pris">45,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Amager Bryghus - Dragør</span>
+                <span class="drik_navn"><span class="bold_tekst">Amager Bryghus</span> - Dragør</span>
                 <span class="drik_pris">45,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Amager Bryghus - Amagerfællede</span>
+                <span class="drik_navn"><span class="bold_tekst">Amager Bryghus</span> - Amagerfællede</span>
                 <span class="drik_pris">45,-</span>
             </div>
 
 
         </div>
-
-
 
         <div class="drikkekort">
             <h4>Mousserende</h4>
             <div class="drik_item">
-                <span class="drik_navn">Castell de Fades, Cava Brut Nature - Organic, Spanien</span>
+                <span class="drik_navn"><span class="bold_tekst">Castell de Fades, Cava Brut Nature</span> -
+                    Organic,
+                    Spanien</span>
                 <span class="drik_pris">75/365,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Thierry Fournier, Chardonnay, Champagne, Marne Vally - Frankrig</span>
+                <span class="drik_navn"><span class="bold_tekst">Thierry Fournier, Chardonnay, Champagne, Marne
+                        Vally</span> - Frankrig</span>
                 <span class="drik_pris">795,-</span>
             </div>
-
-
-
         </div>
+
+        <div></div>
+        <div></div>
+
+
+
         <div class="drikkekort">
             <h4>Hvid</h4>
             <div class="drik_item">
-                <span class="drik_navn">Maison Barboulot, Chardonnay - Frankrig, 2022</span>
+                <span class="drik_navn"> <span class="bold_tekst">Maison Barboulot, Chardonnay</span> -
+                    Frankrig,
+                    2022</span>
                 <span class="drik_pris">60/225,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Bestheim, Riesling, Rayon de Lune - Frankrig, 2019</span>
+                <span class="drik_navn"> <span class="bold_tekst">Bestheim, Riesling, Rayon de Lune</span> -
+                    Frankrig,
+                    2019</span>
                 <span class="drik_pris">75/315,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Famille Hugel, Gentil, Alsace - Frankrig 2022</span>
+                <span class="drik_navn"> <span class="bold_tekst">Famille Hugel, Gentil, Alsace</span> -
+                    Frankrig
+                    2022</span>
                 <span class="drik_pris">85/365,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Maison Louis Jadot, Petit Chablis, Bourgogne, Chablis - Frankrig, 2022</span>
+                <span class="drik_navn"> <span class="bold_tekst">Maison Louis Jadot, Petit Chablis, Bourgogne,
+                        Chablis</span> - Frankrig, 2022</span>
                 <span class="drik_pris">165/650,-</span>
             </div>
 
         </div>
+
         <div class="drikkekort">
             <h4>Rød</h4>
             <div class="drik_item">
-                <span class="drik_navn">Casisano, Brunello di Montalcino - Italien, 2017</span>
+                <span class="drik_navn"><span class="bold_tekst">Casisano, Brunello di Montalcino</span> -
+                    Italien,
+                    2017</span>
                 <span class="drik_pris">65/235,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">La Campagne, Pinot Noir - Frankrig, 2022</span>
+                <span class="drik_navn"><span class="bold_tekst">La Campagne, Pinot Noir</span> - Frankrig,
+                    2022</span>
                 <span class="drik_pris">95/385,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Brazin, Old Vine, Zinfandel - USA, 2020</span>
+                <span class="drik_navn"><span class="bold_tekst">Brazin, Old Vine, Zinfandel</span> - USA,
+                    2020</span>
                 <span class="drik_pris">120/465,-</span>
             </div>
             <div class="drik_item">
-                <span class="drik_navn">Domaine Roche-Audran, Côtes du Rhône Rouge, Rhône Syd - Frankrig, 2021</span>
+                <span class="drik_navn"><span class="bold_tekst">Domaine Roche-Audran, Côtes du Rhône Rouge,
+                        Rhône
+                        Syd</span> - Frankrig, 2021</span>
                 <span class="drik_pris">235/895,-</span>
             </div>
 
         </div>
+        <div></div>
+
     </div>
 
+    <img class="drik_img" src="img/RestaurantAmager2023_015.jpg" alt="drik">
+
+    <section id="footer">
+        <p><b>Adresse</b> <br> <br>
+
+            Amagerbrogade 264 <br>
+            2300 København S</p>
+
+        <div>
+            <p><b> Åbningstider</b> <br><br>
+
+                Søn-tors: 10-21 <br>
+                Fre-lør: 10-22
+            </p>
+            <p class="pkursiv">Køkkenet lukker 30 min før</p>
+        </div>
+        <br>
+
+
+        <p><b>Kontakt</b> <br><br>
+
+            +45 30 40 49 22 <br> <br>
+            restaurantamager@hotmail.com</p>
+
+        <p><b>Sociale medier</b><br><br>
+
+            @restaurantamager</p>
+
+    </section>
 
 
 
 
+    <script src="java.js"></script>
 
 </body>
 
