@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Restaurant Booking Form</title>
+
+</head>
+
+<body>
+
+    <div class="booking-form">
+        <h2>Bordbestilling</h2>
+        <form action="booking" method="post">
+            <label for="navn">Fulde Navn:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="telefon">Telefon nummer:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="antal personer">Antal personer:</label>
+            <input type="number" id="guests" name="guests" min="1" max="8" required>
+
+            <label for="dato">Dato:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Tid:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Book bord</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
