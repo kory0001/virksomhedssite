@@ -41,3 +41,47 @@ body {
 .booking-form button:hover {
   background-color: #218838;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #eee5e2;
+}
+
+.booking-form {
+  background: #839f7c;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 10px;
+  border-radius: 5px;
+}
+.booking-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: beige;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: #218838;
+}
