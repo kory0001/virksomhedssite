@@ -1,7 +1,10 @@
 p {
+  max-width: 65ch;
   text-align: center;
   color: #839f7c;
   font-family: inter;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer p {
