@@ -7,7 +7,7 @@ img {
 /************************** MENU **********************/
 .logo {
   font-family: league gothic;
-  font-size: 4vw;
+  font-size: 2rem;
   color: #839f7c;
 }
 
@@ -158,6 +158,7 @@ main {
   text-align: center;
   padding: 10px;
   font-size: 0.9rem;
+  color: black;
 }
 
 .pkursiv {

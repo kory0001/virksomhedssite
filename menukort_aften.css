@@ -43,6 +43,9 @@ h3 {
   text-align: center;
   font-family: inter;
   color: black;
+  font-size: 0.8rem;
+  margin-top: -1%;
+  margin-bottom: 2%;
 }
 
 .flex {
@@ -86,9 +89,13 @@ h3 {
 }
 
 .retter {
-  border: 2px solid #000; /* Sort kant med en tykkelse på 2px */
-  padding: 15px; /* Indvendig polstring */
-  border-radius: 10px; /* Afrundede hjørner */
-  background-color: #f9f9f9; /* Baggrundsfarve */
-  display: inline-block; /* Gør containeren passende til indholdet */
+  border: 2px solid #839f7c;
+  padding: 30px;
+  display: inline-block;
+}
+
+.container_retter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
