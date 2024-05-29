@@ -61,6 +61,7 @@ nav {
 }
 
 .logo a {
+  text-transform: uppercase;
   font-weight: 100;
   text-decoration: none;
   color: #839f7c;
@@ -82,45 +83,6 @@ nav {
 .burger {
   display: none;
 }
-@media screen and (max-width: 800px) {
-  .menu {
-    display: none;
-  }
-  .burger {
-    display: block;
-  }
-  .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
-  }
-
-  .burger.active .line:nth-child(2) {
-    opacity: 0;
-    transition: 0.15s linear;
-  }
-
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
-  }
-
-  nav.active .menu {
-    display: block;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
-
-  nav.active .menu li {
-    margin: 10px 20px;
-  }
-
-  nav.active .menu a {
-    font-size: 15px;
-  }
-}
 
 body {
   background-color: var(--primary);
@@ -139,7 +101,6 @@ h1 {
   justify-content: space-around;
   list-style: none;
   font-family: inter;
-  font-size: 1rem;
 
   color: #839f7c;
 }
@@ -148,6 +109,7 @@ h1 {
   text-decoration: none;
   color: #839f7c;
   transition: color 0.3s ease;
+  font-size: 0.7rem;
 }
 
 .menup a:hover {
@@ -170,8 +132,72 @@ main {
   font-style: italic;
 }
 
-/************** FOOTER I DESKTOP **************/
+.lottie_grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lottie {
+  max-width: 40%;
+}
+
+/**************** MENU P *******************/
+
+.menu {
+  display: none;
+}
+
+.burger {
+  display: block;
+}
+/************** DESKTOP **************/
 @media (min-width: 700px) {
+  .menup a {
+    text-decoration: none;
+    color: #839f7c;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+  nav.active .menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 15px;
+  }
   #footer {
     display: flex;
     font-family: inter;
