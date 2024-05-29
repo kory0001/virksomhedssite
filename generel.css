@@ -1,3 +1,7 @@
+html {
+  --primary: #eee5e2;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -118,7 +122,7 @@ nav {
 }
 
 body {
-  background-color: #eee5e2;
+  background-color: var(--primary);
 }
 
 h1 {

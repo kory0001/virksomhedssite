@@ -23,7 +23,6 @@ p {
   font-family: inter;
   max-width: 50ch;
   font-size: 15px;
-  margin-bottom: 10%;
 }
 
 h1 {
@@ -39,7 +38,8 @@ h1 {
   font-family: inter;
   font-size: 3vw;
   text-align: center;
-  margin: 0.1rem;
+  margin-top: 8%;
+  margin-bottom: 8%;
   padding: 1rem 3rem;
 }
 
@@ -59,7 +59,7 @@ h1 {
     color: #eee5ee;
     background-color: #839f7c;
     text-decoration: none;
-    font-family: inter;
+
     font-size: 2rem;
     text-align: center;
     padding: 1.05rem 1rem;
