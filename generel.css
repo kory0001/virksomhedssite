@@ -37,6 +37,14 @@ nav {
   padding: 0;
 }
 
+.menu {
+  display: none;
+}
+
+.burger {
+  display: inline;
+}
+
 .menu li {
   margin-right: 20px;
 }
@@ -80,10 +88,36 @@ nav {
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
-.burger {
-  display: none;
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  transition: 0.2s linear;
 }
 
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  transition: 0.2s linear;
+}
+nav.active .menu {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav.active .menu li {
+  margin: 10px 20px;
+}
+
+nav.active .menu a {
+  font-size: 15px;
+}
 body {
   background-color: var(--primary);
 }
@@ -120,6 +154,7 @@ main {
   max-width: 900px;
   margin: 0 auto;
 }
+
 /****************** FOOTER ******************/
 #footer p {
   text-align: center;
@@ -142,23 +177,8 @@ main {
   max-width: 40%;
 }
 
-/**************** MENU P *******************/
-
-.menu {
-  display: none;
-}
-
-.burger {
-  display: block;
-}
-/************** DESKTOP **************/
 @media (min-width: 700px) {
-  .menup a {
-    text-decoration: none;
-    color: #839f7c;
-    transition: color 0.3s ease;
-    font-size: 1rem;
-  }
+  /************** DESKTOP **************/
 
   .menu {
     display: flex;
@@ -168,36 +188,14 @@ main {
     display: none;
   }
 
-  .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
+  .menup a {
+    text-decoration: none;
+    color: #839f7c;
+    transition: color 0.3s ease;
+    font-size: 1rem;
   }
 
-  .burger.active .line:nth-child(2) {
-    opacity: 0;
-    transition: 0.15s linear;
-  }
-
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
-  }
-  nav.active .menu {
-    display: block;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
-
-  nav.active .menu li {
-    margin: 10px 20px;
-  }
-
-  nav.active .menu a {
-    font-size: 15px;
-  }
+  /****************** FOOTER *****************/
   #footer {
     display: flex;
     font-family: inter;
