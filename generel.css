@@ -57,6 +57,7 @@ nav {
 
 .menu a:hover {
   color: #839f7c;
+  text-decoration: underline;
 }
 
 .logo a {

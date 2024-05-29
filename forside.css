@@ -48,6 +48,14 @@ h1 {
   flex-direction: column;
 }
 
+.grid_forside a {
+  transition: color 0.3s ease;
+}
+
+.grid_forside a:hover {
+  color: #444;
+}
+
 @media (min-width: 700px) {
   .grid_titel {
     display: grid;
