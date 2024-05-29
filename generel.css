@@ -186,4 +186,10 @@ main {
     text-align: left;
     color: black;
   }
+
+  .lottie_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 5%;
+  }
 }
